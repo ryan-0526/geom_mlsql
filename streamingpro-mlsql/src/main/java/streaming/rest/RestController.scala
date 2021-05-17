@@ -103,6 +103,8 @@ class RestController extends ApplicationController with WowLog {
   def script = {
     setAccessControlAllowOrigin
 
+    println("spark")
+
     val silence = paramAsBoolean("silence", false)
     val sparkSession = getSession
 
